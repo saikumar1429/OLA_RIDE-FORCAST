@@ -24,7 +24,7 @@ model = load_model()
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("ola.csv")
+    df = pd.read_csv("ola_project/ola.csv")
     df['datetime'] = pd.to_datetime(df['datetime'])
     df = df.sort_values("datetime")
     return df
