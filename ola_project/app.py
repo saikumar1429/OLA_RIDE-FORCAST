@@ -15,7 +15,7 @@ st.title("🛵 Ola Bike Ride Demand Forecasting Dashboard")
 
 @st.cache_resource
 def load_model():
-    with open(with open("ola_project/ola_xgboost_model.pkl", "rb") as f:
+    with open("ola_project/ola_xgboost_model.pkl", "rb") as f:
         return pickle.load(f)
 
 model = load_model()
